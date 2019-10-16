@@ -22,12 +22,16 @@ It deploys:
 
 - Namespaces for core infrastructure apps.
 - The ``faster`` (SSD) StorageClass.
+- CRDs for the Kopf_ peering functionality.
 - The core infrastructure apps:
 
   - :doc:`argo-cd <../argo-cd/index>` for continuous delivery of Roundtable apps with Argo CD.
   - :doc:`nginx-ingress <../nginx-ingress/index>` for shared ingress.
   - :doc:`cert-manager <../cert-manager/index>` for Let's Encrypt-provided TLS certificates.
   - :doc:`prometheus <../prometheus/index>` for the Kubernetes-native monitoring stack (Prometheus Operator, Prometheus, and Grafana).
+  - :doc:`strimzi <../strimzi/index>` Kafka operators.
+  - :doc:`events <../events/index>` Kafka cluster.
+  - :doc:`sealed-secrets <../sealed-secrets/index>` for GitOps-compatible Kubernetes secrets.
 
 .. rubric:: Bootstrapping the Application
 

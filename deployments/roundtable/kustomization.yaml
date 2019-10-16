@@ -21,3 +21,6 @@ resources:
   - resources/events-dev.yaml
   - resources/events.yaml
   - resources/sealed-secrets.yaml
+
+crds:
+  - crds/kopf-peering.yaml

@@ -130,6 +130,7 @@ rst_epilog = """
 .. _httpie: https://httpie.org
 .. _Strimzi: https://strimzi.io
 .. _Sealed Secrets: https://github.com/bitnami-labs/sealed-secrets
+.. _Kopf: https://kopf.readthedocs.io/en/latest/
 """
 
 # -- Options for linkcheck builder ----------------------------------------
