@@ -51,12 +51,15 @@ data:
     # For Strimzi (Kafka)
     - url: https://strimzi.io/charts/
       name: strimzi
-    # For ELK stack logging
-    - url: https://kiwigrid.github.io/
-      name: kiwigrid
     # For Vault Secrets Operator
     - url: https://ricoberger.github.io/helm-charts/
       name: ricoberger
+    # For Prometheus
+    - url: https://prometheus-community.github.io/helm-charts
+      name: prometheus-community
+    # For the Grafana subchart for Prometheus
+    - url: https://grafana.github.io/helm-charts
+      name: grafana
     # SQuaRE charts
     - url: https://lsst-sqre.github.io/charts/
       name: lsst-sqre

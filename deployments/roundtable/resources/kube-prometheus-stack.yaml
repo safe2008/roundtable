@@ -1,14 +1,22 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kube-prometheus-stack
+spec:
+  finalizers:
+    - kubernetes
+---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: prometheus
+  name: kube-prometheus-stack
 spec:
   destination:
-    namespace: prometheus
+    namespace: kube-prometheus-stack
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: deployments/prometheus
+    path: deployments/kube-prometheus-stack
     repoURL: https://github.com/lsst-sqre/roundtable
     targetRevision: HEAD
   syncPolicy:

@@ -5,19 +5,15 @@ resources:
   # Storage classes
   - resources/ssd-storageclass.yaml
   # Namespaces
-  - resources/prometheus-ns.yaml
   - resources/strimzi-ns.yaml
   - resources/events-ns.yaml
   - resources/events-dev-ns.yaml
   - resources/sealed-secrets-ns.yaml
-  - resources/logging-ns.yaml
   # Applications
   - resources/argo-cd.yaml
-  - resources/gafaelfawr.yaml
-  - resources/prometheus.yaml
+  - resources/kube-prometheus-stack.yaml
   - resources/strimzi.yaml
   - resources/events-dev.yaml
   - resources/events.yaml
   - resources/sealed-secrets.yaml
-  - resources/logging.yaml
   - resources/vault-secrets-operator.yaml
